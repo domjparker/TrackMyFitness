@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track My Fitness</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Compressed CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
+      crossorigin="anonymous"
+    />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="top-bar">
+      <div class="top-bar left">
+        <button type="button" class="primary" id="toStatsPageBtn" href="/stats">
+          Workout Stats
+        </button>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div class="grid-x">
+      <div class="cell small-0 medium-2 large-4"></div>
+      <div class="cell small-12 medium-8 large-4">
+        <form>
+          <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+              <div class="large-12 cell">
+                <label
+                  >Exercise Type
+                  <select>
+                    <option value="strength">strength</option>
+                    <option value="cardio">cardio</option>
+                  </select>
+                </label>
+              </div>
+              <div class="strength hide">
+                <div class="large-12 cell">
+                  <label
+                    >Exercise Name
+                    <input type="text" placeholder="bicep curls" id="strengthName"/>
+                  </label>
+                </div>
+                <div class="large-12 cell">
+                  <label
+                    >Duration of Exercise:
+                    <input type="number" placeholder="10" id="strengthDuration"/>
+                  </label>
+                </div>
+                <div class="large-12 cell">
+                  <label
+                    >Weight Used (in lbs):
+                    <input type="number" placeholder="10" id="strengthWeight"/>
+                  </label>
+                </div>
+                <div class="large-12 cell">
+                  <label
+                    >Number of Sets:
+                    <input type="number" placeholder="10" id="strengthSets"/>
+                  </label>
+                </div>
+                <div class="large-12 cell">
+                  <label
+                    >Number of Reps:
+                    <input type="number" placeholder="10" id="strengthReps"/>
+                  </label>
+                </div>
+              </div>
+              <div class="cardio hide">
+                <div class="large-12 cell">
+                  <label
+                    >Exercise Name
+                    <input type="text" placeholder="running" id="cardioName"/>
+                  </label>
+                </div>
+                <div class="large-12 cell">
+                  <label
+                    >Duration of Exercise:
+                    <input type="number" placeholder="20" id="cardioDuration"/>
+                  </label>
+                </div>
+                <div class="large-12 cell">
+                  <label
+                    >Distance (in miles):
+                    <input type="number" placeholder="10" id="cardioDistance"/>
+                  </label>
+                </div>
+              </div>
+              <div class="workoutButtons hide">
+                <button type="button" class="success button" id="tallyWorkout">Tally workout</button>
+                <button type="button" class="primary button" id="addExercise">Add exercise</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="cell small-0 medium-8 large-4"></div>
+    </div>
+
+    <!-- Compressed JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
+      crossorigin="anonymous"
+    ></script>
+    <!-- index.js link -->
+    <script src="js/workout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track My Fitness</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Compressed CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
+      crossorigin="anonymous"
+    />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="top-bar">
+      <div class="top-bar left">
+        <button type="button" class="primary" id="toStatsPageBtn" href="/stats">
+          Workout Stats
+        </button>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div class="grid-x">
+      <div class="cell small-0 medium-2 large-4"></div>
+      <div class="cell small-12 medium-8 large-4">
+        <div class="card" style="width: auto;">
+          <div class="card-divider">
+            <h2>Track My Fitness</h2>
+          </div>
+          <!-- <img src="../../To-Burger-List-App/public/assets/images/close-up-photo-of-burger-1639562.jpg"> -->
+          <div class="card-section">
+            <h4>Your Recent Workout</h4>
+            <div class="recentWorkoutData">
+              <p>
+                It has an easy to override visual style, and is appropriately
+                subdued.
+              </p>
+            </div>
+          </div>
+          <div class="indexButtons">
+            <button type="button" class="success button" id="createWorkout">Create New Workout</button>
+            <button type="button" class="primary button" id="amendWorkout">Amend This Workout</button>
+          </div>
+        </div>
+      </div>
+      <div class="cell small-0 medium-8 large-4"></div>
+    </div>
+
+    <!-- Compressed JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
+      crossorigin="anonymous"
+    ></script>
+    <!-- index.js link -->
+    <script src="js/stats.js"></script>
+  </body>
+</html>
